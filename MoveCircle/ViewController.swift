@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     weak var circleViewGlobal: UIView!
     
-    enum Diraction {
+    enum Direction {
         case left
         case right
         case up
@@ -118,8 +118,8 @@ class ViewController: UIViewController {
         }
     }
     
-    func getDirectionText(_ direct: Diraction) {
-            var direction = Diraction.left
+    func getDirectionText(_ direction: Direction) {
+            
             switch direction {
             case .down:
                 messageLabel.text = "we're moving to down"
